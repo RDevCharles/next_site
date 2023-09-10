@@ -1,27 +1,151 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* global.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* styles/globals.css */
+@import 'font-awesome/css/font-awesome.min.css';
 
+
+
+/* Apply custom styles using Tailwind CSS classes */
+
+/* Define custom color variables */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary-color: #5700a9; /* Purple */
+  --secondary-color: #3498db; /* Blue for accents */
+  --text-color: #333; /* Dark text color */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* Reset some default styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333; /* Dark text color */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Container to center content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(25deg, #270439fb, #4a018e);
+  color: #fff; /* White text color */
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #9ea0a2; /* Blue for accents */
+}
+
+/* Hero Section Styles */
+.hero {
+  background: linear-gradient(135deg, #2a003d, #5700a9); /* Even darker gradient from purple to magenta */
+  color: #fff;
+  text-align: center;
+  padding: 275px 0;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #a770f1, #f174bf); /* Light purple to light pink gradient */
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.cta-button2 {
+  display: inline-block;
+  background: #45118b; /* Light purple to light pink gradient */
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, #9264c9, #e7609d); /* Slightly darker gradient on hover */
+}
+
+/* Add more styles for other sections and components as needed */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens here */
+  .container {
+    padding: 10px;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  header {
+    padding: 10px 0;
+    flex-direction: column;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
 }
