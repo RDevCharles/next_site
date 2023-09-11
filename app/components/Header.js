@@ -12,9 +12,9 @@ export default function Header() {
       <div className="logo">Your Logo</div>
       <nav>
         <ul>
-          <li><Link to="services" smooth={true}>Services</Link></li>
-          <li><Link to="team" smooth={true}>Team</Link></li>
-          <li><Link to="contact" smooth={true}>Contact</Link></li>
+          <li style={{cursor:"pointer"}}><Link to="services" smooth={true}>Services</Link></li>
+          <li style={{cursor:"pointer"}}><Link to="team" smooth={true}>Team</Link></li>
+          <li style={{cursor:"pointer"}}><Link to="contact" smooth={true}>Contact</Link></li>
         </ul>
       </nav>
     </header>
