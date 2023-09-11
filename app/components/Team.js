@@ -24,8 +24,10 @@ const Team = () => {
           {team.map((member) => (
             <div className=" p-6 ">
               <Image
+                key={member.name}
                 className="w-32 h-32 mx-auto rounded-full mb-4 object-cover"
                 src={member.image}
+                alt={member.name}
                 width={150}
                 height={150}
               />
