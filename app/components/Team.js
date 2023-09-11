@@ -22,9 +22,9 @@ const Team = () => {
           {/* map over team array and display each member */}
           
           {team.map((member) => (
-            <div className=" p-6 ">
+            <div key={member.name} className=" p-6 ">
               <Image
-                key={member.name}
+                
                 className="w-32 h-32 mx-auto rounded-full mb-4 object-cover"
                 src={member.image}
                 alt={member.name}
