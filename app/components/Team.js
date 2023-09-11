@@ -13,20 +13,6 @@ const Team = () => {
             <Image className="w-32 h-32 mx-auto rounded-full mb-4 object-cover" src={"/person1.jpg"} width={150} height={150} />
             <h3 className="text-xl font-semibold mb-2">John Doe</h3>
             <p className="text-gray-700">Founder & CEO</p>
-            <div className="mt-4">
-              <a
-                href="#"
-                className="text-purple-800 hover:text-purple-600 text-xl mr-4"
-              >
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a
-                href="#"
-                className="text-purple-800 hover:text-purple-600 text-xl"
-              >
-                <i className="fab fa-twitter"></i>
-              </a>
-            </div>
           </div>
 
           {/* Team Member 2 */}
@@ -34,20 +20,7 @@ const Team = () => {
           <Image className="w-32 h-32 mx-auto rounded-full mb-4 object-cover" src={"/person2.jpg"} width={150} height={150} />
             <h3 className="text-xl font-semibold mb-2">Jane Smith</h3>
             <p className="text-gray-700">Head of Data Science</p>
-            <div className="mt-4">
-              <a
-                href="#"
-                className="text-purple-800 hover:text-purple-600 text-xl mr-4"
-              >
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a
-                href="#"
-                className="text-purple-800 hover:text-purple-600 text-xl"
-              >
-                <i className="fab fa-twitter"></i>
-              </a>
-            </div>
+            
           </div>
 
           {/* Team Member 3 */}
@@ -55,20 +28,7 @@ const Team = () => {
           <Image className="w-32 h-32 mx-auto rounded-full mb-4 object-cover" src={"/person3.jpg"} width={150} height={150} />
             <h3 className="text-xl font-semibold mb-2">Mike Johnson</h3>
             <p className="text-gray-700">Lead AI Engineer</p>
-            <div className="mt-4">
-              <a
-                href="#"
-                className="text-purple-800 hover:text-purple-600 text-xl mr-4"
-              >
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a
-                href="#"
-                className="text-purple-800 hover:text-purple-600 text-xl"
-              >
-                <i className="fab fa-twitter"></i>
-              </a>
-            </div>
+            
           </div>
 
           {/* Team Member 4 */}
@@ -76,20 +36,7 @@ const Team = () => {
           <Image className="w-32 h-32 mx-auto rounded-full mb-4 object-cover" src={"/person4.jpg"} width={150} height={150} />
             <h3 className="text-xl font-semibold mb-2">Sarah Brown</h3>
             <p className="text-gray-700">Data Analyst</p>
-            <div className="mt-4">
-              <a
-                href="#"
-                className="text-purple-800 hover:text-purple-600 text-xl mr-4"
-              >
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a
-                href="#"
-                className="text-purple-800 hover:text-purple-600 text-xl"
-              >
-                <i className="fab fa-twitter"></i>
-              </a>
-            </div>
+            
           </div>
         </div>
       </div>
