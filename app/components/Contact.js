@@ -5,7 +5,9 @@ import AOS from 'aos';
 
 const Contact = () => {
 
+  
   useEffect(() => {
+    //initialize animate on scroll
     AOS.init();
 }, []);
   return (

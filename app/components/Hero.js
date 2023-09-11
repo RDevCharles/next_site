@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import AOS from 'aos';
 
 export default function Hero() {
-
+//initialize animate on scroll
     useEffect(() => {
         AOS.init();
     }, []);

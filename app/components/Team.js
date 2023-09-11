@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 const Team = () => {
+  //TODO: DRY up the code by using a map function to iterate over the team members
   return (
     <section id="team"  className="py-20 bg-gradient-to-b from-purple-300 to-magenta-400">
       <div className="container mx-auto text-center">
