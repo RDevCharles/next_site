@@ -16,7 +16,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About/>
-      <Services />
+      <Services name="services" />
       <Team />
       <Contact />
       <Footer/>
